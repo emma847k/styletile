@@ -130,21 +130,27 @@ ul li:last-child {
 }
 
 .textures li {
-    height: 30vw;
+    height: 20vw;
     width: 40%;
     margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-    background: url(../img/full_logo.png) top left repeat;
+    background: url(../img/full_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .texture-swatch-2 {
-    background: url(../img/subtle_grunge.png) top left repeat;
+    background: url(../img/simpel_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .texture-swatch-3 {
-    background: url(../img/white_paperboard.png) top left repeat;
+    background: url(../img/supersimpel_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .images ul {
@@ -187,7 +193,7 @@ button:focus-within {
 
 button:hover {
     background-color: var(--link-hover-color);
-    transform: scale(3) rotate(40deg);
+    transform: scale(1.1);
 }
 
 button:active {
@@ -228,14 +234,10 @@ a {
     color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.2s;
 }
 
 a:hover {
     color: var(--link-hover-color);
-    font-size: 4rem;
-    background-color: var(--color-4);
-    opacity: 0.1;
 }
 
 p[class*="font-details-"] {
